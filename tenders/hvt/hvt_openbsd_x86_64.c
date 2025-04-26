@@ -157,8 +157,6 @@ int hvt_vcpu_loop(struct hvt *hvt)
     vrp->vrp_vcpu_id = hvb->vcpu_id;
 
     for (;;) {
-        vrp->vrp_irq = 0xFFFF;
-
         if (ioctl(hvb->vmd_fd, VMM_IOC_RUN, vrp) < 0) {
             err(1, "hvt_vcpu_loop: vm / vcpu run ioctl failed");
         }
