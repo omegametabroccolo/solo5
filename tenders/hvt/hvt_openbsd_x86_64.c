@@ -155,7 +155,6 @@ int hvt_vcpu_loop(struct hvt *hvt)
 
     vrp->vrp_vm_id = hvb->vcp_id;
     vrp->vrp_vcpu_id = hvb->vcpu_id;
-    vrp->vrp_continue = 0;
 
     for (;;) {
         vrp->vrp_irq = 0xFFFF;
@@ -207,8 +206,6 @@ int hvt_vcpu_loop(struct hvt *hvt)
                     errx(1, "unhandled exit: unknown exit reason 0x%x",
                         vrp->vrp_exit_reason);
             }
-
-            vrp->vrp_continue = 1;
         }
     }
 }
