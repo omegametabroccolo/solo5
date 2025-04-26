@@ -125,7 +125,7 @@ void hvt_vcpu_init(struct hvt *hvt, hvt_gpa_t gpa_ep)
             .vrs_msrs[VCPU_REGS_CSTAR] = 0ULL,
             .vrs_msrs[VCPU_REGS_SFMASK] = 0ULL,
             .vrs_msrs[VCPU_REGS_KGSBASE] = 0ULL,
-            .vrs_crs[VCPU_REGS_XCR0] = XCR0_X87
+            .vrs_crs[VCPU_REGS_XCR0] = XFEATURE_X87
         }
     };
 
