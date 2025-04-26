@@ -40,6 +40,7 @@
 #include <sys/sysctl.h>
 #include <machine/cpu.h>
 #include <machine/vmmvar.h>
+#include <dev/vmm/vmm.h>
 #include <machine/specialreg.h>
 
 #include "hvt.h"

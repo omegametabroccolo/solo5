@@ -40,6 +40,7 @@
 #include <sys/types.h>
 #include <sys/sysctl.h>
 #include <machine/vmmvar.h>
+#include <dev/vmm/vmm.h>
 #include <sys/param.h>
 
 #include "hvt.h"
